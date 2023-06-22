@@ -9,7 +9,7 @@ import './App.css'
 export default function App() {
   const [user, setUser] = useState(null)
 
-  function updateUserData() {
+  function login() {
     setUser({
       name: "Thomas",
       age: "37"
@@ -19,7 +19,7 @@ export default function App() {
   return (
     // Provide the context to some part of our application
     <userContext.Provider value={user}>
-      <button onClick={updateUserData}>Set user to Thomas</button>
+      <button onClick={login}>Login as Thomas</button>
       <Main user={user} />
     </userContext.Provider>
   )

@@ -11,7 +11,7 @@ export function ProfileInfo(props) {
       <h2>Profil Info</h2>
       {
         user === null
-        ? <h3>Loading user info</h3>
+        ? <h3>Waiting for user to login</h3>
         : <h3>Name: {user.name} Age: {user.age}</h3>
       }
     </div>
