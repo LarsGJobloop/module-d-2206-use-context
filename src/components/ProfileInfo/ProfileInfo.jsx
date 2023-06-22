@@ -9,7 +9,11 @@ export function ProfileInfo(props) {
   return (
     <div>
       <h2>Profil Info</h2>
-      <h3>Name: {user.name} Age: {user.age}</h3>
+      {
+        user === null
+        ? <h3>Loading user info</h3>
+        : <h3>Name: {user.name} Age: {user.age}</h3>
+      }
     </div>
   )
 }

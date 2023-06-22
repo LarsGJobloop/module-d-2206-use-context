@@ -7,10 +7,7 @@ import './App.css'
 
 
 export default function App() {
-  const [user, setUser] = useState({
-    name: "Lars G",
-    age: "33",
-  })
+  const [user, setUser] = useState(null)
 
   function updateUserData() {
     setUser({
