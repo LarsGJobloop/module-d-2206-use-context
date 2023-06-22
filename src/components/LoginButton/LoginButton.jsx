@@ -1,7 +1,15 @@
-import { useContext } from "react"
+import React, { useContext } from "react"
 import { userContext } from "../../contexts/userContext"
 
-export function LoginButton() {
+/**
+ * @param {{
+ *  Icon?: React.JSX.Element
+ * }} props 
+ * @returns 
+ */
+export function LoginButton(props) {
+  const {Icon} = props
+
   const {user, setUser} = useContext(userContext)
 
   function login() {
@@ -23,6 +31,11 @@ export function LoginButton() {
         : logout
       }
     >
+      {
+        Icon !== undefined
+        ? <Icon />
+        : ""
+      }
       {
         user === null
         ? "Login as Thomas"
