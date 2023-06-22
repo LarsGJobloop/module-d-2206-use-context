@@ -1,3 +1,4 @@
+import { LoginButton } from "../LoginButton/LoginButton"
 import { ProfileInfo } from "../ProfileInfo/ProfileInfo"
 
 export function Main(props) {
@@ -5,6 +6,7 @@ export function Main(props) {
     <main>
       <section>
         <h2>Section 1</h2>
+        <LoginButton />
       </section>
 
       <section>

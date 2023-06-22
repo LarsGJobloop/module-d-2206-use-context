@@ -3,7 +3,7 @@ import { userContext } from "../../contexts/userContext"
 
 export function ProfileInfo(props) {
   // Extract the context information where we need it
-  const user = useContext(userContext)
+  const {user} = useContext(userContext)
   console.log(user)
 
   return (
